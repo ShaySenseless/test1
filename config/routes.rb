@@ -1,11 +1,16 @@
 Rails.application.routes.draw do
+  devise_for :users
+  devise_for :models
   resources :mitarbeiters
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'pages#home'
+  root to: 'pages#home'
+
+  # post 'users/edit[.:format]', to: 'devise/registrations#edit'
+  # post '/users/edit[.:format]', to: 'devise/registrations#edit'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
