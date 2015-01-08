@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pesonalnummer: 1
+  vorname: MyString
+  nachname: MyString
+  handy: MyString
+  festnetz: MyString
+  az_monat: MyString
+  az_konto: MyString
+
+two:
+  pesonalnummer: 1
+  vorname: MyString
+  nachname: MyString
+  handy: MyString
+  festnetz: MyString
+  az_monat: MyString
+  az_konto: MyString

@@ -1,1 +1,11 @@
-<h1>Hello world! i'm a new Ruby on Rails app :)</h1>
+<% @current_diesel_price = 2.14 %>
+
+<h1>Diese Woche:</h1>
+
+<div>
+	<h2>Dieselpreis</h2>
+	<div>
+		<h4>Aktuell Dieselpreis: <%= @current_diesel_price %>€</h4>
+		<a target="_blank" href="http://www.shell.de/products-services/on-the-road/fuels/fuel-pricing/current-prices.html">Preisentwicklung</a>
+	</div>
+</div>

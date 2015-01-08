@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mitarbeiter</h1>
+
+<table class="table table-bordered">
+  <thead style="color: white; background-color: #531">
+    <tr>
+      <th>Pesonalnummer</th>
+      <th>Vorname</th>
+      <th>Nachname</th>
+      <th>Handy</th>
+      <th>Festnetz</th>
+      <th>Az monat</th>
+      <th>Az konto</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mitarbeiters.each do |mitarbeiter| %>
+      <tr>
+        <td><%= mitarbeiter.pesonalnummer %></td>
+        <td><%= mitarbeiter.vorname %></td>
+        <td><%= mitarbeiter.nachname %></td>
+        <td><%= mitarbeiter.handy %></td>
+        <td><%= mitarbeiter.festnetz %></td>
+        <td><%= mitarbeiter.az_monat %></td>
+        <td><%= mitarbeiter.az_konto %></td>
+        <td><%= link_to 'Show', mitarbeiter %></td>
+        <td><%= link_to 'Edit', edit_mitarbeiter_path(mitarbeiter) %></td>
+        <td><%= link_to 'Destroy', mitarbeiter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to('Neu Mitarbeiter', new_mitarbeiter_path, class: "btn btn-warning")%>

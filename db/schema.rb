@@ -11,6 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150108180830) do
+
+  create_table "mitarbeiters", force: :cascade do |t|
+    t.integer  "pesonalnummer"
+    t.string   "vorname"
+    t.string   "nachname"
+    t.string   "handy"
+    t.string   "festnetz"
+    t.string   "az_monat"
+    t.string   "az_konto"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
 end
